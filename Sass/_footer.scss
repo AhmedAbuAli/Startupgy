@@ -1,0 +1,40 @@
+#footer {
+  color: white;
+  padding: 3rem 0 ;
+  background-color:rgb(2, 2, 2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h5{
+    font-size: 1.875rem;
+    margin: 1.875rem 0 ;
+  }
+  hr {
+    width: 4%;
+    border: 1px solid $faint-white;
+    border-top: none;
+  }
+  h6 {
+    font-size: 1rem;
+    margin: 0.5rem 0 ;
+  }
+  #Social-icons {
+    padding: 0.75rem 0 ;
+    img {
+      width: 2.25rem ;
+      padding: 0 0.4rem ;
+      transition: all .5s;
+
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+#last {
+  height: 5vh;
+  width: 100%
+}

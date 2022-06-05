@@ -1,0 +1,450 @@
+#dimmed-bg {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(20, 20, 20, 0.86);
+  top: 0;
+  left: 0;
+  transition: all .6s;
+  transform: translateX(-120vw);
+  visibility: hidden; }
+
+#full-site {
+  visibility: hidden;
+  overflow: hidden;
+  max-height: 100vh;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+#above-fold {
+  position: relative;
+  z-index: 12;
+  color: white;
+  padding-left: 92px;
+  padding-top: 62px;
+  box-sizing: border-box;
+  width: 94%;
+  height: 100vh;
+  display: inline-block;
+  opacity: 0;
+  transition: all 1s .5s; }
+  #above-fold nav {
+    display: inline-block;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.38);
+    padding-bottom: 1.125rem;
+    padding-right: 4.5rem; }
+    #above-fold nav li {
+      display: inline-block;
+      padding: 0 1.875rem; }
+    #above-fold nav li:first-child {
+      padding-left: 0; }
+    #above-fold nav a {
+      transition: opacity .1s; }
+      #above-fold nav a:hover {
+        opacity: .8; }
+  #above-fold article {
+    margin-top: 12.75rem; }
+    #above-fold article h1 {
+      font-size: 2.25rem; }
+    #above-fold article p {
+      margin: 3rem 0;
+      width: 40rem;
+      line-height: 200%; }
+    #above-fold article button {
+      background-color: #404040;
+      color: #e8fff7;
+      padding: .8em 1.4em;
+      padding-right: 16em;
+      transition: opacity .2s; }
+      #above-fold article button:hover {
+        opacity: .6; }
+
+#register-side-bar {
+  width: 170%;
+  display: flex;
+  position: absolute;
+  transition: all 0.6s 1s;
+  transform: translateX(200px); }
+  #register-side-bar #empty-section {
+    width: 94%;
+    height: 100vh; }
+  #register-side-bar #visible-section {
+    width: 6%;
+    height: 100vh;
+    background-color: #f3d110;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+    font-size: 1.125rem;
+    transition: opacity 1.4s; }
+    #register-side-bar #visible-section span {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      margin: 8vh 0;
+      transition: opacity .6s; }
+      #register-side-bar #visible-section span i {
+        font-size: 1.5rem;
+        margin-bottom: 2rem; }
+    #register-side-bar #visible-section h4 {
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      transition: opacity .6s; }
+  #register-side-bar #form-section {
+    background-color: #f3d110;
+    height: 100vh;
+    box-sizing: border-box;
+    width: 70%;
+    color: white;
+    padding-top: 30vh; }
+    #register-side-bar #form-section h2 {
+      font-size: 1.875rem;
+      margin-bottom: 3.25rem; }
+    #register-side-bar #form-section input:not([type="submit"]) {
+      display: block;
+      background-color: transparent;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+      margin: 3.125rem 0;
+      padding: 6px 18px; }
+    #register-side-bar #form-section input[type="submit"] {
+      background-color: white;
+      color: #292929;
+      padding: .4em 5.4em;
+      border-radius: 4px;
+      margin-left: 8px;
+      margin-bottom: 4.125rem;
+      transition: all .3s; }
+      #register-side-bar #form-section input[type="submit"]:hover {
+        opacity: .8;
+        transform: scale(1.1); }
+    #register-side-bar #form-section ::placeholder {
+      color: inherit; }
+    #register-side-bar #form-section a {
+      color: #00FFFF; }
+      #register-side-bar #form-section a:hover {
+        opacity: .7; }
+
+#current-users {
+  width: 60%;
+  color: white;
+  margin: 11.875rem auto;
+  padding: 22px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.38);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.38); }
+  #current-users h3, #current-users h4 {
+    text-align: center; }
+  #current-users h4 {
+    font-size: 2.25rem; }
+  #current-users h3 {
+    font-size: 4.5rem;
+    margin-top: 12px; }
+
+#footer {
+  color: white;
+  padding: 3rem 0;
+  background-color: rgba(2,2,2,100);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; }
+  #footer h5 {
+    font-size: 1.875rem;
+    margin: 1.875rem 0; }
+  #footer hr {
+    width: 4%;
+    border: 1px solid rgba(255, 255, 255, 0.38);
+    border-top: none; }
+  #footer h6 {
+    font-size: 1rem;
+    margin: 0.5rem 0; }
+  #footer #Social-icons {
+    padding: 0.75rem 0; }
+    #footer #Social-icons img {
+      width: 2.25rem;
+      padding: 0 0.4rem;
+      transition: all .5s; }
+      #footer #Social-icons img:hover {
+        transform: scale(1.2); }
+
+#last {
+  height: 5vh;
+  width: 100%; }
+
+#info-section {
+  color: #cfcfcf;
+  margin: 5.125rem; }
+  #info-section article {
+    display: flex;
+    align-items: center;
+    margin: 2rem; }
+    #info-section article figure {
+      width: 48%;
+      height: 13.875rem;
+      background-size: cover;
+      background-position: center;
+      flex-shrink: 0;
+      transition: all .3s; }
+      #info-section article figure:hover {
+        transform: scale(1.1); }
+    #info-section article div {
+      margin-left: 5.125rem; }
+      #info-section article div h2 {
+        font-size: 1.875rem;
+        margin-bottom: 0.5rem; }
+      #info-section article div p {
+        font-size: 1rem;
+        width: 70%;
+        line-height: 220%; }
+  #info-section article:nth-of-type(1) figure {
+    background-image: url("../images/w1.jpg"); }
+  #info-section article:nth-of-type(2) figure {
+    background-image: url("../images/w2.jpg"); }
+  #info-section article:nth-of-type(3) figure {
+    background-image: url("../images/w3.jpg"); }
+  #info-section article:nth-of-type(2) {
+    position: relative;
+    left: 60px; }
+
+@keyframes intro-content {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1s; } }
+
+@keyframes intro-header {
+  0% {
+    transform: translateY(40px) scale(0.6); }
+  100% {
+    transform: translate(0) scale(1); } }
+
+#bg {
+  background-color: White;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  position: fixed; }
+
+#landing {
+  animation-name: intro-content;
+  animation-duration: 1.4s;
+  animation-delay: .1s;
+  animation-fill-mode: both;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #f3d110;
+  transition: all .4s;
+  position: relative;
+  z-index: 10; }
+  #landing h1 {
+    font-size: 3rem;
+    margin-top: 1rem;
+    animation-name: intro-header;
+    animation-duration: 1s;
+    animation-delay: .1s; }
+  #landing p {
+    width: 36%;
+    text-align: center;
+    line-height: 190%; }
+  #landing button {
+    color: white;
+    background-color: #f3d110;
+    padding: .6em 4.2em;
+    border-radius: 4px;
+    transition: all .4s;
+    margin-top: 0.875rem; }
+    #landing button:hover {
+      transform: scale(1.2);
+      opacity: .8; }
+
+#Locations {
+  margin: 7.5rem 0;
+  text-align: center;
+  color: white; }
+  #Locations h2 {
+    font-size: 2.25rem;
+    text-transform: uppercase; }
+  #Locations #header-link {
+    font-size: 1.75rem;
+    display: block;
+    color: #8a8a8a;
+    text-decoration: underline;
+    margin: 0.5rem 0 1.375rem; }
+    #Locations #header-link:hover {
+      opacity: .6; }
+  #Locations input {
+    background-color: transparent;
+    width: 18.75rem;
+    padding: 0 1.125rem 0.625rem;
+    display: block;
+    text-align: center;
+    margin: 4.5rem auto;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.38); }
+  #Locations ::placeholder {
+    color: #d3d3d3; }
+  #Locations h4 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+  #Locations ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60%;
+    margin: 1.125rem auto; }
+  #Locations li {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.125rem;
+    list-style: none;
+    padding: 1.125rem 3.625rem; }
+
+input, body, button {
+  font-family: "Questrial" , sans-serif; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+body {
+  overflow-x: hidden;
+  margin: 0; }
+
+h1, h2, h3, h4, h5, h6, figure, p {
+  font-weight: normal;
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+button, input {
+  outline: none;
+  border: none;
+  color: inherit; }
+
+p, a, button, input {
+  font-size: 1.125rem; }
+
+#testimonials {
+  background-color: rgba(227, 227, 227, 0.08);
+  margin: 12.5rem 0;
+  position: relative; }
+  #testimonials #testimonials-bg {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 70vw;
+    background-color: white; }
+  #testimonials article {
+    position: relative;
+    z-index: 20;
+    padding: 2.5rem 0 2.875rem;
+    text-align: center; }
+    #testimonials article h2 {
+      text-transform: uppercase;
+      font-size: 2.25rem;
+      margin-bottom: 1.5rem; }
+    #testimonials article h5 {
+      font-size: 1.5rem; }
+      #testimonials article h5 span {
+        font-size: 2.25rem;
+        color: #0d77bb; }
+    #testimonials article #reviews {
+      color: white;
+      margin: 1.25rem 0.875rem; }
+      #testimonials article #reviews .review {
+        border-radius: 20px;
+        vertical-align: middle;
+        background-color: #f3d110;
+        margin: 0;
+        padding: 0.625rem;
+        transition: all .4s; }
+        #testimonials article #reviews .review:hover {
+          transform: translateY(40px);
+          opacity: .7; }
+        #testimonials article #reviews .review .reviewer-details {
+          align-items: center; }
+          #testimonials article #reviews .review .reviewer-details figure {
+            text-align: center;
+            border-radius: 50%;
+            background-size: cover;
+            height: 3.125rem;
+            width: 3.125rem; }
+          #testimonials article #reviews .review .reviewer-details .details {
+            text-align: center;
+            margin-left: 1.125rem;
+            letter-spacing: 1px; }
+            #testimonials article #reviews .review .reviewer-details .details .name {
+              font-weight: bolder;
+              text-align: center;
+              font-size: 1.125rem;
+              text-transform: uppercase;
+              margin-bottom: 0.375rem;
+              text-align: center; }
+            #testimonials article #reviews .review .reviewer-details .details .form {
+              text-align: center;
+              font-size: 0.875rem;
+              text-align: center; }
+        #testimonials article #reviews .review .review-text {
+          font-size: 1rem;
+          margin-top: 0.875rem;
+          margin-bottom: 50px;
+          text-align: center;
+          line-height: 240%; }
+    #testimonials article .review:nth-of-type(2) figure {
+      background-image: url("../images/22.jpg"); }
+    #testimonials article a {
+      display: block;
+      text-align: center;
+      color: #0d77bb;
+      margin-top: 0.5rem; }
+      #testimonials article a:hover {
+        opacity: .7; }
+
+#weekly-deal {
+  margin: 7.5rem 0;
+  color: white; }
+  #weekly-deal h2 {
+    background-color: rgba(13, 13, 13, 0.52);
+    font-size: 2.25rem;
+    width: max-content;
+    padding: 2.625rem;
+    padding-left: 21.25rem;
+    padding-right: 10rem;
+    margin-bottom: 0.625rem; }
+  #weekly-deal #deal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center; }
+    #weekly-deal #deal #deal-details {
+      width: 30%;
+      padding-left: 11.25rem; }
+      #weekly-deal #deal #deal-details #h3 {
+        font-size: 2.25rem; }
+      #weekly-deal #deal #deal-details #p {
+        font-size: 1rem;
+        line-height: 180%;
+        margin: 1.25rem 0 2rem; }
+      #weekly-deal #deal #deal-details #a {
+        text-decoration: none; }
+        #weekly-deal #deal #deal-details #a:hover {
+          opacity: .6; }
+    #weekly-deal #deal figure {
+      background-image: url("../images/s1.jpeg");
+      background-size: cover;
+      height: 36rem;
+      width: 44%;
+      box-shadow: -4px 4px 14px 4px rgba(80, 80, 80, 0.44);
+      transition: all .6s; }
+      #weekly-deal #deal figure:hover {
+        transform: scale(1.1); }
